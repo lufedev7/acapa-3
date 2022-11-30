@@ -11,61 +11,26 @@ import Image from "next/image";
 import SideBarMenuItems from "./SideBarMenuItems";
 export default function SideBar() {
   return (
-    <nav
-      className=" hidden
-        sm:flex
-        flex-col
-        p-2 
-        xl:items-start 
-        fixed
-        h-full"
-    >
+    <nav className=" ">
       <div className="flex">
         <Image
           src="/acapa.png"
           alt="Logo de la entidad"
           width={72}
           height={36}
-          className="hover:scale-110 w-auto h-auto sm:w-[52px] sm:h-[35px] transition duration-500 ease-out"
+          className=""
         ></Image>
-        <div className="relative group hidden lg:inline">
-          <div
-            className=" rounded-full
-        absolute 
-        blur-sm
-         inset-1 
-         bg-gradient-to-r 
-         from-gradienpri 
-         to-botton 
-         opacity-75 
-         group-hover:opacity-100 
-         transition duration-1000 
-         group-hover:duration-200 
-         animate-tilt"
-          ></div>
-          <div className=" w-[80px] lg:w-[190px] sticky  top-1  py-1-5 z-50 my-1 mx-4">
-            <div className="  items-center rounded-full h-8 flex p-3 relative">
-              <SearchIcon className="h-6 text-green-700 z-50" />
-              <input
-                className="absolute 
-        inset-0 
-        rounded-full 
-        pl-11
-         border-green-700 
-         focus:shadow-lg
-          focus:bg-white
-           bg-green-100
-            text-green-700 
-            focus:outline-none
-         focus:border-green-500"
-                type="text"
-                placeholder="Search Acapa "
-              />
+        <div className="">
+          <div className=" "></div>
+          <div className="">
+            <div className="  ">
+              <SearchIcon className="" />
+              <input className="" type="text" placeholder="Search Acapa " />
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-4 mb-2.5 sm:items-start xl:mt-8">
+      <div className="">
         <SideBarMenuItems text="Iniciativas" Icon={StarIcon} active />
         <SideBarMenuItems text="Servicios" Icon={LightningBoltIcon} />
         <SideBarMenuItems text="Atractivos" Icon={SunIcon} />
@@ -73,22 +38,9 @@ export default function SideBar() {
         <SideBarMenuItems text="Contactos" Icon={PhoneIcon} />
       </div>
 
-      <div className="mt-auto sm:max-lg:w-[35px] ">
-        <div
-          className="flex
-        text-green-700
-        justify-center
-        
-        items-center
-        lg:justify-start
-       mt-6
-       cursor-pointer
-       hover:bg-green-50
-       hover:brightness-125
-       rounded-full
-"
-        >
-          <div className="rounded-full">
+      <div className=" ">
+        <div className="">
+          <div className="">
             <Image
               src="https://img.a.transfermarkt.technology/portrait/big/39152-1622801006.jpg?lm=1"
               width={30}
@@ -97,8 +49,8 @@ export default function SideBar() {
               className="rounded-full"
             ></Image>
           </div>
-          <div className="px-3 leading-4 hidden lg:inline text-green-700">
-            <h4 className="font-bold">lufer_739@gmail</h4>
+          <div className="">
+            <h4 className="">lufer_739@gmail</h4>
             <p className="">Fernando Angarita</p>
           </div>
         </div>
