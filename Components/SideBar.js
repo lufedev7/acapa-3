@@ -11,7 +11,15 @@ import Styles from "../styles/SideBarStyles.module.css";
 import SideBarMenuItems from "./SideBarMenuItems";
 export default function SideBar() {
   return (
-    <nav className={`${Styles.SidebarDivPrimary}`}>
+    <nav
+      className=" hidden
+        sm:flex
+        flex-col
+        p-2 
+        xl:items-start 
+        fixed
+        h-full"
+    >
       <div className="flex">
         <Image
           src="/acapa.png"
@@ -26,7 +34,17 @@ export default function SideBar() {
             <div className="  items-center rounded-full h-8 flex p-3 relative">
               <SearchIcon className="h-6 text-green-700 z-50" />
               <input
-                className={`${Styles.Imput}`}
+                className="absolute 
+        inset-0 
+        rounded-full 
+        pl-11
+         border-green-700 
+         focus:shadow-lg
+          focus:bg-white
+           bg-green-100
+            text-green-700 
+            focus:outline-none
+         focus:border-green-500"
                 type="text"
                 placeholder="Search Acapa "
               />
