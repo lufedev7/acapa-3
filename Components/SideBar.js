@@ -22,7 +22,7 @@ export default function SideBar() {
         ></Image>
         <div className="">
           <div className=" "></div>
-          <div className="">
+          <div className="bg-red-300">
             <div className="  ">
               <SearchIcon className="" />
               <input className="" type="text" placeholder="Search Acapa " />
