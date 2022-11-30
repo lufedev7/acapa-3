@@ -7,7 +7,7 @@ import {
   SearchIcon,
 } from "@heroicons/react/outline";
 import Image from "next/image";
-import Styles from "../styles/SideBarStyles.module.css";
+
 import SideBarMenuItems from "./SideBarMenuItems";
 export default function SideBar() {
   return (
@@ -29,7 +29,20 @@ export default function SideBar() {
           className="hover:scale-110 w-auto h-auto sm:w-[52px] sm:h-[35px] transition duration-500 ease-out"
         ></Image>
         <div className="relative group hidden lg:inline">
-          <div className={`${Styles.SearchEfect}`}></div>
+          <div
+            className=" rounded-full
+        absolute 
+        blur-sm
+         inset-1 
+         bg-gradient-to-r 
+         from-gradienpri 
+         to-botton 
+         opacity-75 
+         group-hover:opacity-100 
+         transition duration-1000 
+         group-hover:duration-200 
+         animate-tilt"
+          ></div>
           <div className=" w-[80px] lg:w-[190px] sticky  top-1  py-1-5 z-50 my-1 mx-4">
             <div className="  items-center rounded-full h-8 flex p-3 relative">
               <SearchIcon className="h-6 text-green-700 z-50" />
@@ -61,7 +74,20 @@ export default function SideBar() {
       </div>
 
       <div className="mt-auto sm:max-lg:w-[35px] ">
-        <div className={`${Styles.DivProfileSection}`}>
+        <div
+          className="flex
+        text-green-700
+        justify-center
+        
+        items-center
+        lg:justify-start
+       mt-6
+       cursor-pointer
+       hover:bg-green-50
+       hover:brightness-125
+       rounded-full
+"
+        >
           <div className="rounded-full">
             <Image
               src="https://img.a.transfermarkt.technology/portrait/big/39152-1622801006.jpg?lm=1"
