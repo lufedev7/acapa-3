@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face{
+    font-family:"Poppins";
+    src: url("/Fonts/Poppins-Regular.woff2") format("woff2");
+    font-weight:400;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+}
+
+.circle {
+  width:150px;
+  height:585px;
+  background: linear-gradient(to bottom,#87eF4E   30%, #87BF4E 30%);
+  filter:blur(130px);
+
+}
+.-b-text-undexpanded {
+  display: -webkit-box;
+  
+  -webkit-line-clamp: 3; /* Número de líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.-b-expander {
+  cursor: pointer;
+  
+}
